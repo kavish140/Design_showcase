@@ -27,7 +27,7 @@ export function Nav() {
     >
       <a href="#" className="flex items-center gap-2">
         <span className="inline-block h-6 w-6 rounded-md bg-accent" />
-        <span className="font-display text-xl">Site Nova</span>
+        <span className="font-display text-xl">SiteNova</span>
       </a>
       <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
         <a href="#services" className="hover:text-foreground transition-colors">Services</a>

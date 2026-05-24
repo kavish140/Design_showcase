@@ -17,7 +17,7 @@ export function Footer() {
 
       <div className="mx-auto max-w-6xl px-6 mt-16 flex flex-col md:flex-row gap-10 md:items-end justify-between">
         <div>
-          <div className="font-display text-2xl mb-2">Site Nova</div>
+          <div className="font-display text-2xl mb-2">SiteNova</div>
           <p className="text-sm text-white/60 max-w-xs">
             A design + automation studio for ambitious brands. Remote, worldwide.
           </p>
@@ -37,7 +37,7 @@ export function Footer() {
       </div>
 
       <div className="mx-auto max-w-6xl px-6 mt-16 pt-6 border-t border-white/10 flex justify-between text-xs text-white/40">
-        <span>© {new Date().getFullYear()} Site Nova Studio</span>
+        <span>© {new Date().getFullYear()} SiteNova Studio</span>
         <span>Crafted with care.</span>
       </div>
     </footer>

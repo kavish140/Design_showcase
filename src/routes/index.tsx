@@ -10,13 +10,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Site Nova — Web Design & Automation Studio" },
+      { title: "SiteNova — Web Design & Automation Studio" },
       {
         name: "description",
         content:
-          "Site Nova is a design + automation studio crafting high-converting, editorial-grade websites for ambitious brands.",
+          "SiteNova is a design + automation studio crafting high-converting, editorial-grade websites for ambitious brands.",
       },
-      { property: "og:title", content: "Site Nova — Web Design & Automation Studio" },
+      { property: "og:title", content: "SiteNova — Web Design & Automation Studio" },
       {
         property: "og:description",
         content: "Stunning websites paired with smart automation. For brands who refuse to look like everyone else.",

@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const quotes = [
   {
-    quote: "Site Nova rebuilt our entire web presence and conversions jumped 64% in the first month. The craftsmanship is unreal.",
+    quote: "SiteNova rebuilt our entire web presence and conversions jumped 64% in the first month. The craftsmanship is unreal.",
     name: "Amelia Rourke",
     role: "Founder, Northwell Studio",
   },
