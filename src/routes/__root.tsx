@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { ParticleTrail } from "../components/site/ParticleTrail";
 
 function NotFoundComponent() {
   return (
@@ -78,6 +79,7 @@ function RootComponent() {
 
   return (
     <>
+      <ParticleTrail />
       <Outlet />
     </>
   );
