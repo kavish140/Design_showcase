@@ -35,13 +35,21 @@ export function Nav() {
         <a href="#work" className="hover:text-foreground transition-colors">Work</a>
         <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
       </nav>
-      <a
-        href="#contact"
-        className="liquid-btn group inline-flex items-center gap-1.5 rounded-full bg-foreground text-background text-sm font-medium px-4 py-2 transition-colors"
-      >
-        Get in Touch
-        <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-      </a>
+      <div className="flex items-center gap-2">
+        <a 
+          href="https://sitenova.dev"
+          className="hidden md:inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Back to SiteNova
+        </a>
+        <a
+          href="#contact"
+          className="liquid-btn group inline-flex items-center gap-1.5 rounded-full bg-foreground text-background text-sm font-medium px-4 py-2 transition-colors"
+        >
+          Get in Touch
+          <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        </a>
+      </div>
     </motion.header>
   );
 }
