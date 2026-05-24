@@ -112,23 +112,25 @@ export function ParticleTrail() {
         // Life cycle calculations (grow then shrink)
         const lifeRatio = p.life / p.maxLife;
         // Parabola mapping 0..1 to 0..1..0
-        const scale = Math.sin(lifeRatio * Math.PI);
-        const currentSize = p.size * scale;
+        const scale = Math.max(0, Math.sin(lifeRatio * Math.PI));
+        const currentSize = Math.max(0, p.size * scale);
         const opacity = Math.max(0, 1 - lifeRatio);
 
-        ctx.save();
-        ctx.translate(p.x, p.y);
-        ctx.rotate(p.angle);
-        
-        ctx.globalAlpha = opacity * 0.7; // Not too prominent
-        ctx.fillStyle = p.color;
-        
-        // Draw pill shape (dash)
-        ctx.beginPath();
-        ctx.roundRect(-currentSize * 2, -currentSize / 2, currentSize * 4, currentSize, currentSize / 2);
-        ctx.fill();
-        
-        ctx.restore();
+        if (currentSize > 0.1) {
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.angle);
+          
+          ctx.globalAlpha = opacity * 0.7; // Not too prominent
+          ctx.fillStyle = p.color;
+          
+          // Draw pill shape (dash)
+          ctx.beginPath();
+          ctx.roundRect(-currentSize * 2, -currentSize / 2, currentSize * 4, currentSize, currentSize / 2);
+          ctx.fill();
+          
+          ctx.restore();
+        }
 
         if (p.life >= p.maxLife) {
           particles.splice(index, 1);
