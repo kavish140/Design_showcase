@@ -32,7 +32,7 @@ export function Testimonials() {
   }, []);
 
   return (
-    <section id="work" className="py-28 md:py-36">
+    <section className="py-28 md:py-36">
       <div className="mx-auto max-w-6xl px-6">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
