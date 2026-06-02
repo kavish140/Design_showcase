@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sitenova.studio/sitemap.xml
+Sitemap: https://design.sitenova.dev/sitemap.xml

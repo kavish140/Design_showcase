@@ -24,23 +24,23 @@ export const Route = createFileRoute("/")({
       { name: "author", content: "SiteNova Studio" },
       { name: "robots", content: "index, follow" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://sitenova.studio" },
+      { property: "og:url", content: "https://design.sitenova.dev" },
       { property: "og:title", content: "SiteNova — Web Design & Automation Studio" },
       {
         property: "og:description",
         content: "Stunning websites paired with smart automation. For brands who refuse to look like everyone else.",
       },
-      { property: "og:image", content: "https://sitenova.studio/og-image.jpg" },
+      { property: "og:image", content: "https://design.sitenova.dev/og-image.jpg" },
       { property: "og:site_name", content: "SiteNova" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:url", content: "https://sitenova.studio" },
+      { name: "twitter:url", content: "https://design.sitenova.dev" },
       { name: "twitter:title", content: "SiteNova — Web Design & Automation Studio" },
       { name: "twitter:description", content: "Stunning websites paired with smart automation. For brands who refuse to look like everyone else." },
-      { name: "twitter:image", content: "https://sitenova.studio/og-image.jpg" },
+      { name: "twitter:image", content: "https://design.sitenova.dev/og-image.jpg" },
       { name: "theme-color", content: "#ffffff" },
     ],
     links: [
-      { rel: "canonical", href: "https://sitenova.studio" }
+      { rel: "canonical", href: "https://design.sitenova.dev" }
     ]
   }),
 });
