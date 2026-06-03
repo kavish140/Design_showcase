@@ -81,7 +81,7 @@ export function Projects() {
 
               {/* Iframe Preview Side */}
               <div className={`md:w-2/3 w-full ${i % 2 !== 0 ? 'md:order-1' : ''}`}>
-                <a href={project.url} target="_blank" rel="noreferrer" className="block w-full">
+                <a href={project.url} target="_blank" rel="noreferrer" aria-label={`View ${project.name} live project`} className="block w-full">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden glass border border-border/50 shadow-2xl transition-transform duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(var(--accent-value),0.3)]">
                     
                     {/* Fake Browser Bar */}
